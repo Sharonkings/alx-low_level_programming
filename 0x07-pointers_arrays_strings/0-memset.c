@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _memset -fill a block of meomory with a specfic value
- * @s : starting adresss of meomoet to be fillied
+ * @s : starting adresss of meomory to be filled
  * @b: the desired value
  * @n : number of bytes to be changed
  *
