@@ -34,10 +34,13 @@ pos = 0;
 for (i = 0; i < ac; i++)
 {
 for (j = 0; av[i][j] != '\0'; j++)
-str[pos++] = av[i][j];
-str[pos++] = '\n';
+{
+	str[pos] = av[i][j];
+	pos++;
 }
-str[pos] = '0';
+str[pos] = '\n';
+pos++;
+}
 
 return (str);
 }
