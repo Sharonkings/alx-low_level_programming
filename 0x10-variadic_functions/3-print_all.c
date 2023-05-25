@@ -12,7 +12,9 @@ int i = 0;
 char *str, *sep = "";
 va_start(args, format);
 
-while (format && format[i])
+if (format)
+{
+while (format[i])
 {
 switch (format[i])
 {
@@ -37,6 +39,7 @@ continue;
 }
 sep = ",";
 i++;
+}
 }
 printf("\n");
 va_end(args);
