@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-void Before(void)__attribute__((constructor));
+void first(void)__attribute__((constructor));
 
 /**
- * Before - prints a sentence before the main
+ * first - marks printf to execute before the main
  * function is executed
  */
-void Before(void)
+void first(void)
 {
 	printf("You're beat! and yet, you must allow, \n");
 	printf("I bore my house upon my back!\n");
