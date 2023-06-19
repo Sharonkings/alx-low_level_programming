@@ -122,7 +122,7 @@ void print_version(unsigned char *e_ident)
 
 	if (e_ident[EI_VERSION] == EV_CURRENT)
 		printf(" (current)\n");
-	else 
+	else
 		printf("\n");
 }
 
